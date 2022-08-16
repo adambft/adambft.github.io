@@ -7,8 +7,9 @@
     font-family: quicksand, Arial, sans-serif;
 }
 
+/* row 1 */
 div#main_div1{
-    font-size: 1.5rem;
+    font-size: 1.8vw;
     height: 120px;
     background-color: #071a33;
     color: #ffffff;
@@ -18,23 +19,40 @@ div#main_div1{
     font-weight: 700;
 }
 
+/* row 2 */
 div.main_div2_container{
     display: flex;
 }
 
 div.main_div2{
     width: 25%;
-    height: 385px;
-    padding: 35px;
+    min-height: 30vh;
+    padding: 4vw;
     display: flex;
     justify-content: center;
     flex-flow: wrap;
     text-align: center;
+    font-size: 1.3vw;
+}
+
+/* div.main_div2 hr{
+    height: 4vh;
+    width: 100%;
+    border: none;
+} */
+
+div.main_div2 h2{
+    margin: 2vw 0 0 0;
+}
+
+div.main_div2 h5{
+    font-size: 1.2vw;
+    margin: 0.5vw 0 0 0;
 }
 
 img.circle_crop_1{
-    height: 200px;
-    width: 200px;
+    height: 16vw;
+    width: 16vw;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 8px 8px #071a33;
@@ -57,32 +75,96 @@ div#div2_4{
 }
 
 div#adam_transition{
-    width: 200px;
-    height: 200px;
+    width: 16vw;
+    height: 16vw;
     border-radius: 50%;
-    background-size: 210px;
-    background-position: 0px -35px;
+    background-size: 18vw;
+    background-position: 0 -4vw;
     background-image: url("imgs/adam1.jfif");
-    transition: 0.5s;
+    transition: background-image 0.5s ease;
     box-shadow: 8px 8px #071a33;
 }
 
 div#adam_transition:hover{
     background-image: url("imgs/adam2.jfif");
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
-
-/* button test */
-div.button1{
-    background-color: #071a33;
-    color: #ffc352;
-    border-radius: 10%;
-    height: 50px;
-    width: 100px;
+/* row 3 */
+div.main_div3_container{
+    display: flex;
+    min-height: 40vh;
 }
 
-div.button1:hover{
-    background-color: #ffc352;
-    color: #071a33;
-}
+    div#main_div3_left{
+        width: 35%;
+        background-color: #071a33;
+        color: #ffc352;
+        padding: 5vw 1.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        div#main_div3_left h2{
+            font-size: 2.8vw;
+            text-align: center;
+        }
+
+        div#main_div3_left h3{
+            font-size: 2.8vw;
+            color: #FFEECF;
+            font-weight: 100;
+            text-align: center;
+        }
+
+    div#main_div3_right{
+        width: 65%;
+        background-color: #ffeecf;
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        color: #071a33;
+    }
+
+        div#main_div3_right h2{
+            font-size: 2.5vw;
+        }
+
+        div#main_div3_right h3{
+            font-size: 2vw;
+            font-weight: 100;
+        }
+
+        div.main_div3_inputs{
+            width: 15vw;
+            float: left;
+        }
+
+        div.main_div3_inputs p{
+            font-size: 1.2vw;
+            font-weight: bold;
+        }
+
+        input.div3_input_set_width{
+            width: 12vw;
+        }
+
+    a#rickroll_button{
+        background-color: #071a33;
+        color: #ffc352;
+        text-decoration: none;
+        margin: 2.5vw 2.5vw 2.5vw 0;
+        padding: 1vw;
+        font-weight: bold;
+        border-radius: 1vw;
+        width: 35vw;
+        font-size: 1.2vw;
+        text-align: center;
+    }
+
+    a#rickroll_button:hover{
+        background-color: #ffc352;
+        color: #071a33;
+    }
