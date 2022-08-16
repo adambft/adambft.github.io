@@ -55,3 +55,19 @@ div#div2_3{
 div#div2_4{
     background-color: #ffc352;
 }
+
+div#adam_transition{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: 210px;
+    background-position: 0px -35px;
+    background-image: url("imgs/adam1.jfif");
+    transition: 0.5s;
+    box-shadow: 8px 8px #071a33;
+}
+
+div#adam_transition:hover{
+    background-image: url("imgs/adam2.jfif");
+    transition: 0.5s;
+}
