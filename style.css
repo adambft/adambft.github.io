@@ -62,14 +62,27 @@ div#adam_transition{
     border-radius: 50%;
     background-size: 210px;
     background-position: 0px -35px;
-    /* background-image: url("imgs/adam1.jfif"); */
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a8/Bill_Gates_2017_%28cropped%29.jpg");
+    background-image: url("imgs/adam1.jfif");
     transition: 0.5s;
     box-shadow: 8px 8px #071a33;
 }
 
 div#adam_transition:hover{
-    background-image: url(https://tse1.mm.bing.net/th?id=OIP.Wg12TZCIx77GEkyDXIsOAQHaE8&pid=Api);
-    /* background-image: url("imgs/adam2.jfif"); */
+    background-image: url("imgs/adam2.jfif");
     transition: 0.5s;
+}
+
+
+/* button test */
+div.button1{
+    background-color: #071a33;
+    color: #ffc352;
+    border-radius: 10%;
+    height: 50px;
+    width: 100px;
+}
+
+div.button1:hover{
+    background-color: #ffc352;
+    color: #071a33;
 }
