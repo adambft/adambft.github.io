@@ -1,0 +1,12 @@
+/* color_scheme: https://www.schemecolor.com/look-in-your-eyes.php */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.main_div1{
+    background-color: #F3B23B;
+    color: #ffffff;
+}
