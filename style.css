@@ -4,10 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: quicksand, Arial, sans-serif;
 }
 
 div.main_div1{
+    font-size: 1.5rem;
+    height: 100px;
     background-color: #F3B23B;
     color: #ffffff;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
 }
