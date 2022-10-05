@@ -1,95 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This Website is a Scam!</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    div.main-div-4{
+      min-height: 35vh;
+      background-color: #ffc352;
+      color: #071a33;
+    }
+
+    div.main-div-4 h3{
+      font-size: calc(2.5vw + 15px);
+      text-align: center;
+      margin: 3vh 0;
+      font-weight: 800;
+    }
+
+    div.main-div-4 span{
+        background-image: url(imgs/adam_ugly_ass_head.svg);
+        /* background-size: 4.5vw; */
+        background-size: calc(3.5vw + 10px);
+        background-repeat: no-repeat;
+        background-position: left center;
+        /* font-size: calc(1.35vw + 10px); */
+        font-size: calc(1.65vw + 15px);
+        list-style: none;
+        padding: 2vw calc(3.5vw + 10px);
+        display: inline;
+        font-weight: 800;
+        cursor: url(imgs/adam_ugly_ass_head.svg), auto;
+    }
+
+    div.main-div-4 span[truth_lie]{
+        position: relative;
+    }
+
+    div.main-div-4 span[truth_lie]::after{
+        content: attr(truth_lie);
+        display: block;
+        position: absolute;
+
+        background-color: #FFEECF;
+        padding: 1vh 1vw;
+        color: #071a33;
+        border-radius: 1vw;
+        font-size: calc(1.25vw + 5px);
+        top: -2.5vh;
+        right: 3.5vw;
+        transform: scale(0);
+        transition: transform ease-in-out 0.25s;
+    }
+
+    div.main-div-4 span[truth_lie]:hover::after{
+        transform: scale(1);
+    }
+  </style>
+
+  <title>Document</title>
 </head>
-
-  <body>
-      <!-- row1 -->
-      <div id="main_div1">
-        <h1>&#127927&#127843&#127790 Hello I'm Adam. &#127810&#127817&#128011</h1>
+<body>
+  <div class="container-fluid">
+    <!-- row 1 -->
+    <div class="row align-items-center justify-content-center dark-bg main-div-1" style="height: 20vh;">
+      <div class="col-sm-4 d-none d-sm-block">
+        <h1 style="text-align: center;">&#127927&#127843&#127790</h1>
       </div>
+      <div class="col-sm-4">
+        <h1 style="text-align: center;">Hello I'm Adam.</h1>
+      </div>
+      <div class="col-sm-4 d-none d-sm-block">
+        <h1 style="text-align: center;">&#127810&#127817&#128011</h1>
+      </div>
+    </div>
 
-      <!-- row 2 -->
-      <div class="main_div2_container">
-        <div class="main_div2" id="div2_1">
-          <div id="adam_transition"></div>
-          <h2>&#128070This is me</h2>
-          <h5>(DO NOT hover over my picture thx)</h5>
-        </div>
-
-        <div class="main_div2" id="div2_2">
-          <img class="circle_crop_1" src="imgs/oliver.jfif" alt="oliver">
-          <h2>&#128070This is my cat, Oliver</h2>
-        </div>
-
-        <div class="main_div2" id="div2_3">
-          <img class="circle_crop_1" src="imgs/coco.jfif" alt="coco">
-          <h2>&#128070This is my other cat, Coco</h2>
-        </div>
-
-        <div class="main_div2" id="div2_4">
-          <img class="circle_crop_1" src="imgs/tigger.jfif" alt="tigger">
-          <h2>&#128070This is my other other cat, Tigger</h2>
+    <!-- row 2 -->
+    <div class="row main-div-2">
+      <div class="col-sm-3 col-6 light-bg-1">
+        <div class="row">
+          <div class="col-4 col-sm-12 align-middle my-5 mt-sm-5 mb-sm-4 justify-content-center">
+            <div id="adam_transition"></div>
+          </div>
+          <div class="col-8 col-sm-12 pt-5 pt-sm-0 ps-4 ps-sm-auto mb-sm-5">
+            <h2>This is me</h2>
+            <h5>(DO NOT hover over my picture thx)</h5>
+          </div>
         </div>
       </div>
-      
-      <!-- row 3 -->
-      <div class="main_div3_container">
+      <div class="col-sm-3 col-6 light-bg-2">
+        <div class="row">
+          <div class="col-4 col-sm-12 text-center my-5 mt-sm-5 mb-sm-4">
+            <img src="./imgs/oliver.jfif" alt="Oliver" width="100%" class="circle_crop_1">
+          </div>
+          <div class="col-8 col-sm-12 pt-5 pt-sm-0 ps-4 ps-sm-auto mb-sm-5">
+            <h2>This is my cat, Oliver</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-6 light-bg-3">
+        <div class="row">
+          <div class="col-4 col-sm-12 text-center my-5 mt-sm-5 mb-sm-4">
+            <img src="./imgs/coco.jfif" alt="Coco" width="100%" class="circle_crop_1">
+          </div>
+          <div class="col-8 col-sm-12 pt-5 pt-sm-0 ps-4 ps-sm-auto mb-sm-5">
+            <h2>This is my other cat, Coco</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-6 light-bg-4">
+        <div class="row">
+          <div class="col-4 col-sm-12 text-center my-5 mt-sm-5 mb-sm-4">
+            <img src="./imgs/tigger.jfif" alt="Tigger" width="100%" class="circle_crop_1">
+          </div>
+          <div class="col-8 col-sm-12 pt-5 pt-sm-0 ps-4 ps-sm-auto mb-sm-5">
+            <h2>This is my other other cat, Tigger</h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div id="main_div3_left">
-          <h2>Fun Fact about me:</h2>
-          <h3>I'm VERY generous</h3>
-          <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
-          <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+    <!-- row 3 -->
+    <div class="row main-div-3">
+      <div class="col-md-4" id="main_div3_left">
+        <div class="row">
+          <div class="col-4 d-none d-sm-block d-md-none">
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-12">
+            <h2>Fun Fact about me:</h2>
+            <h3>I'm VERY generous</h3>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-12">
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-12 d-none d-md-block">
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+            <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+          </div>
+        </div>
+<!-- 
+        <h2>Fun Fact about me:</h2>
+        <h3>I'm VERY generous</h3>
+        <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2>
+        <h2>&#128181&#128181&#128181&#128181&#128181&#128181&#128181</h2> -->
+      </div>
+
+      <div class="col-md-8" id="main_div3_right">
+        <h2>So generous in fact, I'm giving away $1,000 to whoever fills out this form:</h2>
+        <h3>Limited to first 50 submissions, so hurry!</h3>
+
+        <div class="row my-4">
+          <div class="col-6 col-md-4 mb-3">
+            <p>Full name (as in NRIC)</p>
+            <input type="text">
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <p>First all digits of NRIC</p>
+            <input type="text" class="div3_input_set_width">
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <p>Bank Account Number</p>
+            <input type="text" class="div3_input_set_width">
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <p>Bank Password</p>
+            <input type="password" class="div3_input_set_width">
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <p>Name of your first pet</p>
+            <input type="text" class="div3_input_set_width">
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <p>Name & number of person most likely to pay a ransom if you got kidnapped</p>
+            <input type="text" class="div3_input_set_width">
+          </div>
         </div>
 
-        <div id="main_div3_right">
-          <h2>So generous in fact, I'm giving away $1,000 to whoever fills out this form:</h2>
-          <br>
-          <h3>Limited to first 50 submissions, so hurry!</h3>
-          <br>
-
-          <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <div class="main_div3_inputs">
-              <p>Full name (as in NRIC)</p>
-              <input type="text" class="div3_input_set_width">
-            </div>
-
-            <div class="main_div3_inputs">
-              <p>First all digits of NRIC</p>
-              <input type="text" class="div3_input_set_width">
-            </div>
-            
-            <div class="main_div3_inputs">
-              <p>Bank Account Number</p>
-              <input type="text" class="div3_input_set_width">
-            </div>
-
-            <div class="main_div3_inputs">
-              <p>Bank Password</p>
-              <input type="password" class="div3_input_set_width">
-            </div>
-
-            <div class="main_div3_inputs">
-              <p>Name of your first pet</p>
-              <input type="text" class="div3_input_set_width">
-            </div>
-
-            <div class="main_div3_inputs">
-              <p>Name & number of person most likely to pay a ransom if you got kidnapped</p>
-              <input type="text" class="div3_input_set_width">
-            </div>
-          </form>
-
+        <div class="d-flex justify-content-center">
           <a id="rickroll_button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             <span>
               Get My FREE Money Now! (Not a scam, guaranteed)
@@ -97,151 +203,32 @@
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- row 4 -->
-      <div class="main_div4_container">
+    <!-- row 4 -->
+    <div class="row main-div-4 d-flex justify-content-center">
+      <div class="col-12">
         <h3>Adam's Best Traits:</h3>
-
-        <ul>
-          <li truth_lie="Lie">Handsome</li>
-          <li truth_lie="Lie">Charming</li>
-          <li truth_lie="Truth">Delusional</li>
-        </ul>
       </div>
 
-      <!-- row 5 -->
-      <div class="main_div5_container">
-        <div class="div5_block2">
-          <table class='pretty_table_1'>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-          </table>
-
-        </div>
-
-        <div class="div5_block1">
-            <h2>&#128072Let's Draw Baby!</h2>
-            <h3>You are NOT allowed to draw if you're not an infant</h3>
+      <div class="col-12 col-sm-3">
+        <div class="d-flex justify-content-center">
+          <span truth_lie="Lie">Handsome</span>
         </div>
       </div>
+      <div class="col-12 col-sm-3">
+        <div class="d-flex justify-content-center">
+          <span truth_lie="Lie">Charming</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="d-flex justify-content-center">
+          <span truth_lie="Truth">Delusional</span>
+        </div>
+      </div>
+    </div>
 
-   </body>
+    
+  </div>
+</body>
 </html>

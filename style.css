@@ -1,61 +1,61 @@
-/* color_scheme: https://www.schemecolor.com/look-in-your-eyes.php */
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Quicksand, Arial, sans-serif;
+    font-family: quicksand, Arial, Helvetica, sans-serif;
 }
 
-a:hover, img:hover{
+a:hover ,img:hover, #adam_transition:hover{
     cursor: url(imgs/adam_ugly_ass_head.svg), auto;
 }
 
+.dark-bg{
+    background-color: #071A33;
+    color: white;
+}
+
+.light-bg-1{
+    background-color: #FFEECF;
+    color: #071A33;
+}
+
+.light-bg-2{
+    background-color: #FFDB98;
+    color: #071A33;
+}
+
+.light-bg-3{
+    background-color: #FFD17B;
+    color: #071A33;
+}
+
+.light-bg-4{
+    background-color: #FFC352;
+    color: #071A33;
+}
+
 /* row 1 */
-div#main_div1{
-    font-size: 1.8vw;
+div.main-div-1{
     height: 120px;
-    background-color: #071a33;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-div#main_div1 h1{
+div.main-div-1 h1{
     font-weight: 700;
+    font-size: calc(10px + 3vw);
 }
 
-/* row 2 */
-div.main_div2_container{
-    display: flex;
+/* row 2 ------------------------------------------------------------*/
+div.main-div-2{
+    min-height: 40vh;
 }
 
-div.main_div2{
-    width: 25%;
-    min-height: 30vh;
-    padding: 4vw;
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
+div.main-div-2 div div div h2{
     text-align: center;
-    font-size: 1.3vw;
-    color: #071a33;
+    font-weight: 800;
+    font-size: calc(8px + 1.5vw);
 }
 
-/* div.main_div2 hr{
-    height: 4vh;
-    width: 100%;
-    border: none;
-} */
-
-div.main_div2 h2{
-    margin: 2vw 0 0 0;
-}
-
-div.main_div2 h5{
-    font-size: 1.2vw;
-    margin: 0.5vw 0 0 0;
+div.main-div-2 div div div h5{
+    text-align: center;
+    font-weight: 500;
+    font-size: calc(6px + 1vw);
 }
 
 img.circle_crop_1{
@@ -64,22 +64,6 @@ img.circle_crop_1{
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 8px 8px #071a33;
-}
-
-div#div2_1{
-    background-color: #ffeecf;
-}
-
-div#div2_2{
-    background-color: #ffdb98;
-}
-
-div#div2_3{
-    background-color: #ffd17b;
-}
-
-div#div2_4{
-    background-color: #ffc352;
 }
 
 div#adam_transition{
@@ -91,6 +75,7 @@ div#adam_transition{
     background-image: url("imgs/adam1.jfif");
     transition: background-image 0.2s ease;
     box-shadow: 8px 8px #071a33;
+    margin: 0 auto;
 }
 
 div#adam_transition:hover{
@@ -98,192 +83,77 @@ div#adam_transition:hover{
     transition: 0.2s ease;
 }
 
-/* row 3 */
-div.main_div3_container{
-    display: flex;
-    min-height: 40vh;
-}
-
-    div#main_div3_left{
-        width: 35%;
-        background-color: #071a33;
-        color: #ffc352;
-        padding: 5vw 1.5vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-        div#main_div3_left h2{
-            font-size: 2.8vw;
-            text-align: center;
-        }
-
-        div#main_div3_left h3{
-            font-size: 2.8vw;
-            color: #FFEECF;
-            font-weight: 100;
-            text-align: center;
-        }
-
-    div#main_div3_right{
-        width: 65%;
-        background-color: #ffeecf;
-        padding: 5vw;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        color: #071a33;
-    }
-
-        div#main_div3_right h2{
-            font-size: 2.5vw;
-        }
-
-        div#main_div3_right h3{
-            font-size: 2vw;
-            font-weight: 100;
-        }
-
-        div.main_div3_inputs{
-            width: 15vw;
-            float: left;
-        }
-
-        div.main_div3_inputs p{
-            font-size: 1.2vw;
-            font-weight: bold;
-        }
-
-        input.div3_input_set_width{
-            width: 12vw;
-        }
-
-    a#rickroll_button{
-        background-color: #071a33;
-        color: #ffc352;
-        text-decoration: none;
-        margin: 2.5vw 2.5vw 2.5vw 0;
-        padding: 1vw;
-        font-weight: bold;
-        border-radius: 1vw;
-        width: 35vw;
-        font-size: 1.2vw;
-        text-align: center;
-        transition: width 0.6s ease;
-    }
-
-    a#rickroll_button:hover::before{
-        color: #071a33;
-        content: "Get My FREE Money Now! (Could actually be a scam idk)";
-    }
-
-    a#rickroll_button:hover span{
-        display: none;
-    }
-
-    a#rickroll_button:hover{
-        background-color: #ffc352;
-        width: 45vw;
-    }
-
-/* row 4 */
-div.main_div4_container{
-    min-height: 35vh;
-    background-color: #ffc352;
-    color: #071a33;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-    div.main_div4_container h3{
-        font-size: 3.5vw;
-        text-align: center;
-        margin: 6vh 0;
-    }
-
-    div.main_div4_container ul li{
-        background-image: url(imgs/adam_ugly_ass_head.svg);
-        background-size: 4.5vw;
-        background-repeat: no-repeat;
-        background-position: left center;
-        font-size: 2.5vw;
-        list-style: none;
-        padding: 2vw 6vw;
-        display: inline;
-        font-weight: 800;
-        cursor: url(imgs/adam_ugly_ass_head.svg), auto;
-    }
-
-    div.main_div4_container li[truth_lie]{
-        position: relative;
-    }
-
-    div.main_div4_container li[truth_lie]::after{
-        content: attr(truth_lie);
-        display: block;
-        position: absolute;
-
-        background-color: #FFEECF;
-        padding: 1vh 1vw;
-        color: #071a33;
-        border-radius: 1vw;
-        font-size: 1.25vw;
-        top: -1vh;
-        right: 3.5vw;
-        transform: scale(0);
-        transition: transform ease-in-out 0.25s;
-    }
-
-    div.main_div4_container li[truth_lie]:hover::after{
-        transform: scale(1);
-    }
-
-/* row 5 */
-div.main_div5_container{
-    display: flex;
+/* row 3 ------------------------------------------------------------*/
+div#main_div3_left{
     background-color: #071a33;
+    color: #ffc352;
+    padding: 5vw 1.5vw;
+    text-align: center;
 }
 
-    div.div5_block1{
-        width: 30%;
-        display: flex;
-        background-color: #FFEECF;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    div#main_div3_left h2{
+    font-size: calc(2vw + 5px);
     }
 
-        div.div5_block1 h2{
-            font-size: 2.75vw;
-            margin: 5vh 0;
-        }
-
-        div.div5_block1 h3{
-            font-size: 1.5vw;
-        }
-
-    div.div5_block2{
-        width: 70%;
-        display: flex;
-        background-color: #071a33;
+    div#main_div3_left h3{
+    font-size: calc(2vw + 5px);
+    color: #FFEECF;
+    font-weight: 100;
     }
 
-    table.pretty_table_1{
-        border-collapse: collapse;
-        width: 100%;
-        height: 75vh;
-        cursor: url(imgs/adam_ugly_ass_head.svg), auto;
+div#main_div3_right{
+background-color: #ffeecf;
+padding: 5vw;
+color: #071a33;
+}
+
+    div#main_div3_right h2{
+    font-size: calc(2vw + 5px);
+    font-weight: 800;
     }
 
-    table.pretty_table_1 td{
-        background-color: none;
-        transition: background-color ease-in 5s;
+    div#main_div3_right h3{
+    font-size: calc(2vw + 5px);
+    font-weight: 400;
     }
 
-    table.pretty_table_1 td:hover{
-        background-color: #fff4e0;
-        transition: background-color ease-in 0s;
+    div#main_div3_right p{
+    font-size: calc(0.75vw + 5px);
+    font-weight: 800;
+    margin: 0;
     }
+
+    div#main_div3_right input{
+    width: 100%;
+    height: calc(3vh + 10px);
+    }
+
+a#rickroll_button{
+    background-color: #071a33;
+    color: #ffc352;
+    text-decoration: none;
+    margin: 2.5vw 2.5vw 2.5vw 0;
+    padding: 1vw;
+    font-weight: bold;
+    border-radius: 1vw;
+    width: calc(30vw + 110px);
+    font-size: calc(1vw + 4px);
+    text-align: center;
+    transition: width 0.6s ease;
+    display: block;
+}
+
+a#rickroll_button:hover::before{
+    color: #071a33;
+    content: "Get My FREE Money Now! (Could actually be a scam idk)";
+}
+
+a#rickroll_button:hover span{
+    display: none;
+}
+
+a#rickroll_button:hover{
+    background-color: #ffc352;
+    width: calc(45vw + 100px);
+}
+
