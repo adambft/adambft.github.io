@@ -13,63 +13,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    div.main-div-4{
-      min-height: 35vh;
-      background-color: #ffc352;
-      color: #071a33;
-    }
+  <script src="./js1.js"></script>
 
-    div.main-div-4 h3{
-      font-size: calc(2.5vw + 15px);
-      text-align: center;
-      margin: 3vh 0;
-      font-weight: 800;
-    }
-
-    div.main-div-4 span{
-        background-image: url(imgs/adam_ugly_ass_head.svg);
-        /* background-size: 4.5vw; */
-        background-size: calc(3.5vw + 10px);
-        background-repeat: no-repeat;
-        background-position: left center;
-        /* font-size: calc(1.35vw + 10px); */
-        font-size: calc(1.65vw + 15px);
-        list-style: none;
-        padding: 2vw calc(3.5vw + 10px);
-        display: inline;
-        font-weight: 800;
-        cursor: url(imgs/adam_ugly_ass_head.svg), auto;
-    }
-
-    div.main-div-4 span[truth_lie]{
-        position: relative;
-    }
-
-    div.main-div-4 span[truth_lie]::after{
-        content: attr(truth_lie);
-        display: block;
-        position: absolute;
-
-        background-color: #FFEECF;
-        padding: 1vh 1vw;
-        color: #071a33;
-        border-radius: 1vw;
-        font-size: calc(1.25vw + 5px);
-        top: -2.5vh;
-        right: 3.5vw;
-        transform: scale(0);
-        transition: transform ease-in-out 0.25s;
-    }
-
-    div.main-div-4 span[truth_lie]:hover::after{
-        transform: scale(1);
-    }
-  </style>
+  <!-- <style>
+  </style> -->
 
   <title>Document</title>
 </head>
-<body>
+
+<body onload="create_draw_table()">
   <div class="container-fluid">
     <!-- row 1 -->
     <div class="row align-items-center justify-content-center dark-bg main-div-1" style="height: 20vh;">
@@ -228,7 +180,26 @@
       </div>
     </div>
 
-    
+    <!-- row 5 -->
+    <div class="row main-div-5">
+      <div class="col-12 d-flex d-md-none div-5-title justify-content-center">
+        <div>
+          <h2 class="text-center my-3">&#128071Let's Draw Baby!</h2>
+          <h3 class="text-center my-3">You are NOT allowed to draw if you're not an infant</h3>
+        </div>
+      </div>
+
+      <div class="col-md-9 p-0" id="draw_table1_here">
+        <!-- table goes here -->
+      </div>
+
+      <div class="col-md-3 d-none d-md-flex div-5-title align-items-center">
+        <div>
+          <h2 class="my-3">&#128072Let's Draw Baby!</h2>
+          <h3>You are NOT allowed to draw if you're not an infant</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
