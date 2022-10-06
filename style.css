@@ -8,7 +8,12 @@ a:hover ,img:hover, #adam_transition:hover{
 
 .dark-bg{
     background-color: #071A33;
-    color: white;
+    color: #FFC352;
+}
+
+.dark-bg-night{
+    background-color: #212f40;
+    color: #b9a786;
 }
 
 .light-bg-1{
@@ -16,9 +21,19 @@ a:hover ,img:hover, #adam_transition:hover{
     color: #071A33;
 }
 
+.light-bg-1-night{
+    background-color: #262b32;
+    color: #FFEECF;
+}
+
 .light-bg-2{
     background-color: #FFDB98;
     color: #071A33;
+}
+
+.light-bg-2-night{
+    background-color: #212934;
+    color: #FFEECF;
 }
 
 .light-bg-3{
@@ -26,9 +41,19 @@ a:hover ,img:hover, #adam_transition:hover{
     color: #071A33;
 }
 
+.light-bg-3-night{
+    background-color: #182332;
+    color: #FFEECF;
+}
+
 .light-bg-4{
     background-color: #FFC352;
     color: #071A33;
+}
+
+.light-bg-4-night{
+    background-color: #0f1d31;
+    color: #FFEECF;
 }
 
 /* row 1 */
@@ -85,8 +110,6 @@ div#adam_transition:hover{
 
 /* row 3 ------------------------------------------------------------*/
 div#main_div3_left{
-    background-color: #071a33;
-    color: #ffc352;
     padding: 5vw 1.5vw;
     text-align: center;
 }
@@ -102,9 +125,7 @@ div#main_div3_left{
     }
 
 div#main_div3_right{
-background-color: #ffeecf;
 padding: 5vw;
-color: #071a33;
 }
 
     div#main_div3_right h2{
@@ -161,8 +182,6 @@ a#rickroll_button:hover{
 
 div.main-div-4{
     min-height: 35vh;
-    background-color: #ffc352;
-    color: #071a33;
 }
 
 div.main-div-4 h3{
