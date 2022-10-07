@@ -31,6 +31,7 @@ function night_mode() {
     let change_to = night_arr
     let vid_elem = document.getElementById("main-vid-1")
     let vid_title = document.getElementsByClassName("main-div-6")[0].children[0].children[0]
+    let div_6_elem = document.getElementsByClassName("main-div-6")
 
     if (night_btn_elem.hasAttribute("night_mode")) {
         to_find = night_arr
@@ -47,7 +48,7 @@ function night_mode() {
         vid_elem.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/AF_nfazQaek?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
         vid_title.innerText = "Quick word from our sponsor:"
         
-        vid_title.scrollIntoView()
+        div_6_elem.scrollIntoView()
     }
 
     // console.log("to_find: ",to_find)
