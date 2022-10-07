@@ -6,14 +6,19 @@ a:hover ,img:hover, #adam_transition:hover{
     cursor: url(imgs/adam_ugly_ass_head.svg), auto;
 }
 
-.dark-bg{
+.dark-bg, .dark-bg-2{
     background-color: #071A33;
     color: #FFC352;
 }
 
 .dark-bg-night{
-    background-color: #212f40;
-    color: #b9a786;
+    background-color: #030f1c;
+    color: #FFEECF;
+}
+
+.dark-bg-2-night{
+    background-color: #FFEECF;
+    color: #030f1c;
 }
 
 .light-bg-1{
@@ -22,7 +27,7 @@ a:hover ,img:hover, #adam_transition:hover{
 }
 
 .light-bg-1-night{
-    background-color: #262b32;
+    background-color: #755518;
     color: #FFEECF;
 }
 
@@ -32,7 +37,7 @@ a:hover ,img:hover, #adam_transition:hover{
 }
 
 .light-bg-2-night{
-    background-color: #212934;
+    background-color: #593f0e;
     color: #FFEECF;
 }
 
@@ -42,7 +47,7 @@ a:hover ,img:hover, #adam_transition:hover{
 }
 
 .light-bg-3-night{
-    background-color: #182332;
+    background-color: #3d2a08;
     color: #FFEECF;
 }
 
@@ -52,7 +57,7 @@ a:hover ,img:hover, #adam_transition:hover{
 }
 
 .light-bg-4-night{
-    background-color: #0f1d31;
+    background-color: #241804;
     color: #FFEECF;
 }
 
@@ -232,18 +237,14 @@ div.main-div-4 span[truth_lie]:hover::after{
 
 
 /* row 5 ------------------------------------------------------------*/
-div.main-div-5{
-    background-color: #071a33;
-}
-
-table.pretty_table_1{
+table.pretty_table_1, table.pretty_table_1-night{
     border-collapse: collapse;
     width: 100%;
     height: 75vh;
     cursor: url(imgs/adam_ugly_ass_head.svg), auto;
 }
 
-table.pretty_table_1 td{
+table.pretty_table_1 td, table.pretty_table_1-night td{
     background-color: none;
     transition: background-color ease-in 5s;
 }
@@ -253,8 +254,9 @@ table.pretty_table_1 td:hover{
     transition: background-color ease-in 0s;
 }
 
-div.div-5-title{
-background-color: #FFEECF;
+table.pretty_table_1-night td:hover{
+    background-color: #071a33;
+    transition: background-color ease-in 0s;
 }
 
 div.div-5-title h2{

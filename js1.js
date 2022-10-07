@@ -24,19 +24,34 @@ function night_mode() {
     //check if alr night mode
     let night_btn_elem = document.getElementById("night-btn")
 
-    let bright_arr = ["dark-bg", "light-bg-1", "light-bg-2", "light-bg-3", "light-bg-4"]
-    let night_arr = ["dark-bg-night", "light-bg-1-night", "light-bg-2-night", "light-bg-3-night", "light-bg-4-night"]
+    let bright_arr = ["dark-bg", "light-bg-1", "light-bg-2", "light-bg-3", "light-bg-4", "dark-bg-2", "pretty_table_1"]
+    let night_arr = ["dark-bg-night", "light-bg-1-night", "light-bg-2-night", "light-bg-3-night", "light-bg-4-night", "dark-bg-2-night", "pretty_table_1-night"]
 
     let to_find = bright_arr
     let change_to = night_arr
+    let vid_elem = document.getElementById("main-vid-1")
+    let vid_title = document.getElementsByClassName("main-div-6")[0].children[0].children[0]
 
     if (night_btn_elem.hasAttribute("night_mode")) {
         to_find = night_arr
         change_to = bright_arr
         night_btn_elem.removeAttribute("night_mode")
+        night_btn_elem.innerHTML = "Click Here to Switch to Night Mode &#127769"
+
+        vid_elem.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/a5lphRkbaNA?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        vid_title.innerText = "Here's a place I went to awhile ago:"
     } else {
         night_btn_elem.setAttribute("night_mode", "")
+        night_btn_elem.innerHTML = "Click Here to Switch to Day Mode &#127774"
+
+        vid_elem.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/AF_nfazQaek?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        vid_title.innerText = "Quick word from our sponsor:"
+        
+        vid_elem.scrollIntoView()
     }
+
+    // console.log("to_find: ",to_find)
+    // console.log("change_to",change_to)
 
     //do thing
     for (e_idx in to_find) {
@@ -44,13 +59,14 @@ function night_mode() {
         
         let curr_arr_to_edit = document.getElementsByClassName(e_to_find)
 
-        // console.log(e_to_find)
-        // console.log(curr_arr_to_edit)
-        // console.log("----------------------------------------------------")
-
-        for (e_elem_to_change of curr_arr_to_edit) {
+        for (let i=curr_arr_to_edit.length-1; i>=0; i--) {
+            e_elem_to_change = curr_arr_to_edit[i]
             e_elem_to_change.classList.toggle(e_to_find)
             e_elem_to_change.classList.toggle(change_to[e_idx])
+
+            console.log(e_elem_to_change)
         }
     }
+
+    console.log(document.getElementById("test123"))
 }
