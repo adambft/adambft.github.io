@@ -47,7 +47,7 @@ function night_mode() {
         vid_elem.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/AF_nfazQaek?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
         vid_title.innerText = "Quick word from our sponsor:"
         
-        vid_elem.scrollIntoView()
+        vid_title.scrollIntoView()
     }
 
     // console.log("to_find: ",to_find)
