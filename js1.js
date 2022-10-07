@@ -31,7 +31,7 @@ function night_mode() {
     let change_to = night_arr
     let vid_elem = document.getElementById("main-vid-1")
     let vid_title = document.getElementsByClassName("main-div-6")[0].children[0].children[0]
-    let div_6_elem = document.getElementsByClassName("main-div-6")
+    let div_6_elem = document.getElementsByClassName("main-div-6")[0]
 
     if (night_btn_elem.hasAttribute("night_mode")) {
         to_find = night_arr
